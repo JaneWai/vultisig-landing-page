@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-vultisig-secondary antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-vultisig-primary text-white px-6 py-3 rounded-md font-medium hover:bg-vultisig-accent transition-colors shadow-md;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-vultisig-primary border border-vultisig-primary px-6 py-3 rounded-md font-medium hover:bg-gray-50 transition-colors;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-6 text-vultisig-primary;
+  }
+  
+  .section-subtitle {
+    @apply text-xl text-vultisig-gray max-w-3xl mx-auto mb-12;
+  }
+}
