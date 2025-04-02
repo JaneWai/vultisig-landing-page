@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { ArrowRight, Shield, Bot, Key, Layers } from 'lucide-react';
+import { Shield, Bot, Key, Layers } from 'lucide-react';
 import { useBackground, backgrounds } from '../context/BackgroundContext';
 import BackgroundWrapper from './BackgroundWrapper';
 
@@ -27,7 +27,6 @@ const Hero: React.FC = () => {
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
               <a href="#download" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-white hover:bg-indigo-50 transition-colors">
                 Download Now
-                <ArrowRight className="ml-2 h-5 w-5" />
               </a>
               <a href="https://docs.vultisig.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 bg-opacity-20 hover:bg-opacity-30 transition-colors">
                 Visit Vultisig Docs to Learn More
