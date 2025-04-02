@@ -85,13 +85,11 @@ const Security: React.FC = () => {
           </div>
 
           <div className="order-1 md:order-2">
-            <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-2 border border-white border-opacity-20 shadow-2xl">
-              <img 
-                src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                alt="Security visualization" 
-                className="rounded-lg w-full"
-              />
-            </div>
+            <img 
+              src="https://waiting-wrist-6f6.notion.site/image/attachment%3A2dbb8315-7e27-468c-bb78-84839957d9d6%3AGroup_1000004713.png?table=block&id=19823043-5592-80b7-a839-cf3c22fbb58b&spaceId=59ea08d2-bc07-4c80-b51a-dbd605835b75&width=660&userId=&cache=v2" 
+              alt="Security visualization" 
+              className="w-full max-w-md mx-auto"
+            />
           </div>
         </div>
       </div>

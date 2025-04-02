@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
               <span className="block">Like Never Before</span>
             </h1>
             <p className="mt-6 text-xl text-indigo-100 max-w-3xl">
-              Vultisig is a multi-chain, multi-factor, multi-device crypto wallet with enhanced security features designed to protect your digital assets.
+              Vultisig - The first seedless, institutional-grade, multi-chain self-custodial crypto wallet with enhanced security features designed to protect your crypto assets.
             </p>
             
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
@@ -55,12 +55,37 @@ const Hero: React.FC = () => {
           </div>
           
           <div className="mt-16 lg:mt-0 lg:col-span-6 xl:col-span-7">
-            <div className="relative h-64 sm:h-80 lg:h-full">
-              <img
-                className="absolute inset-0 w-full h-full object-cover rounded-xl shadow-2xl"
-                src="https://images.unsplash.com/photo-1639762681057-408e52192e55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2232&q=80"
-                alt="Vultisig wallet interface"
-              />
+            <div className="relative h-64 sm:h-80 lg:h-full flex items-center justify-center">
+              <div className="relative w-full h-full flex items-center justify-center">
+                {/* App mockup positioned to the left but closer to center */}
+                <img
+                  className="absolute object-contain z-0"
+                  src="https://waiting-wrist-6f6.notion.site/image/attachment%3Aa8ae8f0c-2fb4-44c0-bf11-dabf324421d0%3AApp_Mobile_Screen_Mockup_2.png?table=block&id=19823043-5592-8040-bb76-decea390bf81&spaceId=59ea08d2-bc07-4c80-b51a-dbd605835b75&width=1420&userId=&cache=v2"
+                  alt="Vultisig wallet interface"
+                  style={{ 
+                    height: "auto",
+                    width: "55%",
+                    maxWidth: "350px",
+                    left: "45%",
+                    transform: "translateX(-100%)",
+                    bottom: "0"
+                  }}
+                />
+                
+                {/* Agent image positioned to the right but closer to center */}
+                <img
+                  className="absolute object-contain z-10"
+                  src="https://waiting-wrist-6f6.notion.site/image/attachment%3A9ab6d696-f531-4caa-be40-3b55b9f93712%3AVulti_Agent_Reading_(2).png?table=block&id=19123043-5592-8083-8829-f0cc388abb48&spaceId=59ea08d2-bc07-4c80-b51a-dbd605835b75&width=660&userId=&cache=v2"
+                  alt="Vultisig security agent"
+                  style={{ 
+                    height: "auto",
+                    width: "45%",
+                    maxWidth: "300px",
+                    left: "55%",
+                    bottom: "0"
+                  }}
+                />
+              </div>
             </div>
           </div>
         </div>
