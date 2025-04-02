@@ -20,7 +20,11 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <a href="#" className="flex-shrink-0 flex items-center">
-              <span className="text-2xl font-bold text-white">Vultisig</span>
+              <img 
+                src="https://waiting-wrist-6f6.notion.site/image/attachment%3A25a1a8e3-bfa7-4ad8-a3ce-ebcc2d1662cf%3ALogo_NEW_(1).png?table=block&id=1ae23043-5592-807e-ab56-c27f2807dc4c&spaceId=59ea08d2-bc07-4c80-b51a-dbd605835b75&width=1420&userId=&cache=v2" 
+                alt="Vultisig Logo" 
+                className="h-8"
+              />
             </a>
           </div>
           

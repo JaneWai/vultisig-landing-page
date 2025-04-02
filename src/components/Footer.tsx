@@ -71,8 +71,8 @@ const Footer: React.FC = () => {
             <div>
               <h3 className="text-white font-medium mb-4">Legal</h3>
               <ul className="space-y-3">
-                <li><a href="#" className="text-indigo-100 hover:text-white transition-colors">Privacy Policy</a></li>
-                <li><a href="#" className="text-indigo-100 hover:text-white transition-colors">Terms of Service</a></li>
+                <li><a href="https://vultisig.com/privacy" className="text-indigo-100 hover:text-white transition-colors">Privacy Policy</a></li>
+                <li><a href="https://vultisig.com/termofservice" className="text-indigo-100 hover:text-white transition-colors">Terms of Service</a></li>
               </ul>
             </div>
           </div>
