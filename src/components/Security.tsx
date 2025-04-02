@@ -42,9 +42,9 @@ const Security: React.FC = () => {
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-xl font-medium text-white">Secure Enclave Technology</h3>
+                  <h3 className="text-xl font-medium text-white">Bring Your Own Trusted Devices</h3>
                   <p className="mt-2 text-indigo-100">
-                    Private keys are stored in your device's secure enclave, isolated from the operating system and other applications.
+                    The private key never exists in one piece, your devices just proof the collaborative access to it.
                   </p>
                 </div>
               </div>

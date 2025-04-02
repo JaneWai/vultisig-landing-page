@@ -22,24 +22,40 @@ const Testimonials: React.FC = () => {
 
   const testimonials = [
     {
-      content: "Vultisig has completely transformed how I manage my crypto portfolio. The multi-chain support is seamless, and I feel much more secure with the multi-factor authentication.",
-      author: "Alex Thompson",
-      role: "Crypto Investor",
-      avatar: "https://randomuser.me/api/portraits/men/32.jpg"
+      content: "Amazing Team. Amazing Product. Very intuitive and simple to use. Vultisig is the most secure wallet available. Constant updates. Beautiful UI. There is no second best!",
+      author: "Margi Armstrong",
+      rating: 5
     },
     {
-      content: "As a DeFi developer, I needed a wallet that could handle complex interactions across multiple chains. Vultisig delivers this and more with its exceptional security features.",
-      author: "Sarah Chen",
-      role: "Blockchain Developer",
-      avatar: "https://randomuser.me/api/portraits/women/44.jpg"
+      content: "Securing crypto has never been easier and safer before. Onwards!",
+      author: "Rokas Miller",
+      rating: 5
     },
     {
-      content: "Our investment fund requires the highest security standards. Vultisig's multi-signature functionality and device sync capabilities have made it our go-to wallet for managing client assets.",
-      author: "Michael Rodriguez",
-      role: "Crypto Fund Manager",
-      avatar: "https://randomuser.me/api/portraits/men/67.jpg"
+      content: "This is the most powerful application in the DEFI ecosystem. This is an evolutionary crypto wallet - vault in which hacking or loss of the seed phrase is not possible. DYOR this unique product further. Super bullish on it",
+      author: "Aurora Hunter",
+      rating: 5
+    },
+    {
+      content: "With Vultisig, we don't have to leak any of our personal details to anyone to have a safe and revolutionary way of storing wealth. In case you didn't know, Ledger's customer details were leaked a few years ago, with full names, addresses, emails, etc. Vultisig is invisible, cross airports, totalitarian countries without a problem whereas Ledger is visible so can be dangerous at times.",
+      author: "Fidele Gastro",
+      rating: 5
+    },
+    {
+      content: "Vultisig maximizes security as you don't have a single key that can be exploited.",
+      author: "Patriotsounds",
+      rating: 5
     }
   ];
+
+  // Function to render star rating
+  const renderStars = (rating: number) => {
+    return Array(rating).fill(0).map((_, i) => (
+      <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+      </svg>
+    ));
+  };
 
   return (
     <BackgroundWrapper backgroundImage={backgrounds.testimonials} sectionId="testimonials">
@@ -51,16 +67,13 @@ const Testimonials: React.FC = () => {
           </p>
         </div>
 
-        <div className="mt-16 grid gap-8 md:grid-cols-3">
+        <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-8 border border-white border-opacity-20 shadow-xl">
-              <div className="flex items-center mb-6">
-                <div className="h-12 w-12 rounded-full overflow-hidden mr-4 border-2 border-indigo-300">
-                  <img src={testimonial.avatar} alt={testimonial.author} className="h-full w-full object-cover" />
-                </div>
-                <div>
-                  <h4 className="text-lg font-medium text-white">{testimonial.author}</h4>
-                  <p className="text-indigo-300">{testimonial.role}</p>
+              <div className="mb-4">
+                <h4 className="text-lg font-medium text-white">{testimonial.author}</h4>
+                <div className="flex mt-1">
+                  {renderStars(testimonial.rating)}
                 </div>
               </div>
               <p className="text-indigo-100 italic">"{testimonial.content}"</p>

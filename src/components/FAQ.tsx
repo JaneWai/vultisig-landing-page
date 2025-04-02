@@ -12,15 +12,15 @@ const FAQ: React.FC = () => {
   const faqs = [
     {
       question: "What makes Vultisig different from other crypto wallets?",
-      answer: "Vultisig stands out with its multi-chain, multi-factor, and multi-device capabilities. Unlike most wallets that focus on just one aspect of security or usability, Vultisig provides comprehensive protection across all dimensions while maintaining an intuitive user experience."
+      answer: "Vultisig is the first seedless wallet with its multi-chain, multi-factor, and multi-device capabilities."
     },
     {
       question: "How secure is Vultisig?",
-      answer: "Vultisig employs industry-leading security measures including secure enclaves for private key storage, biometric authentication, multi-signature support, and encrypted backups. Your assets are protected by multiple layers of security, making it extremely difficult for unauthorized access."
+      answer: "Vultisig employs industry-leading security measures with its private key never exists in one piece, biometric authentication, and multi-signature support. Your assets are protected by multiple layers of security, making it extremely difficult for unauthorized access."
     },
     {
       question: "Which blockchains does Vultisig support?",
-      answer: "Vultisig supports all major blockchains including Ethereum, Bitcoin, Solana, Polkadot, Avalanche, Cardano, Cosmos, Polygon, Binance Smart Chain, and many more. We regularly add support for new chains based on user demand and security considerations."
+      answer: "Vultisig supports all major blockchains including Ethereum, Bitcoin, Solana, Polkadot, Avalanche, THORChain, Cosmos, Polygon, Binance Smart Chain, and many more. We regularly add support for new chains based on user demand."
     },
     {
       question: "Can I use Vultisig on multiple devices?",
@@ -28,11 +28,11 @@ const FAQ: React.FC = () => {
     },
     {
       question: "What happens if I lose my device?",
-      answer: "Vultisig provides multiple recovery options. You can restore your wallet using your recovery phrase, or if you've enabled multi-device support, you can use another authorized device to access your wallet. Additionally, our optional secure backup feature allows for encrypted cloud backups."
+      answer: "You can import the respective vault share of your lost device to a new device as recovery measure. The funds in your Vultisig wallet cannot be moved even if a third party picked up your lost device, as they do not have the other associated vault shares to co-sign and authorize the funds transfer."
     },
     {
       question: "Is Vultisig open source?",
-      answer: "Yes, Vultisig's core security components are open source, allowing the community to review and verify our security implementations. We believe in transparency while maintaining proprietary elements for our unique user experience features."
+      answer: "Yes, Vultisig is open-source, audited, and allowing the community to review. We believe in transparency while maintaining proprietary elements for our unique user experience features."
     }
   ];
 
@@ -74,8 +74,8 @@ const FAQ: React.FC = () => {
 
         <div className="mt-16 text-center">
           <p className="text-indigo-100 mb-6">Still have questions?</p>
-          <a href="#" className="btn-secondary">
-            Contact Support
+          <a href="https://docs.vultisig.com/other/faq" className="btn-secondary" target="_blank" rel="noopener noreferrer">
+            More FAQ
           </a>
         </div>
       </div>

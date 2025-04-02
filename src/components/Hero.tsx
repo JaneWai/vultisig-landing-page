@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { ArrowRight, Shield, Smartphone, Key, Layers } from 'lucide-react';
+import { ArrowRight, Shield, Bot, Key, Layers } from 'lucide-react';
 import { useBackground, backgrounds } from '../context/BackgroundContext';
 import BackgroundWrapper from './BackgroundWrapper';
 
@@ -29,8 +29,8 @@ const Hero: React.FC = () => {
                 Download Now
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
-              <a href="#features" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 bg-opacity-20 hover:bg-opacity-30 transition-colors">
-                Learn More
+              <a href="https://docs.vultisig.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 bg-opacity-20 hover:bg-opacity-30 transition-colors">
+                Visit Vultisig Docs to Learn More
               </a>
             </div>
             
@@ -40,8 +40,8 @@ const Hero: React.FC = () => {
                 <span className="ml-2 text-indigo-100">Multi-Factor Auth</span>
               </div>
               <div className="flex items-center">
-                <Smartphone className="h-6 w-6 text-indigo-300" />
-                <span className="ml-2 text-indigo-100">Multi-Device</span>
+                <Bot className="h-6 w-6 text-indigo-300" />
+                <span className="ml-2 text-indigo-100">AI Agents Plug-Ins</span>
               </div>
               <div className="flex items-center">
                 <Key className="h-6 w-6 text-indigo-300" />

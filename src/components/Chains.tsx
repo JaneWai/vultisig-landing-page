@@ -27,13 +27,13 @@ const Chains: React.FC = () => {
     { name: 'Solana', logo: 'https://cryptologos.cc/logos/solana-sol-logo.png?v=025' },
     { name: 'Polkadot', logo: 'https://cryptologos.cc/logos/polkadot-new-dot-logo.png?v=025' },
     { name: 'Avalanche', logo: 'https://cryptologos.cc/logos/avalanche-avax-logo.png?v=025' },
-    { name: 'Cardano', logo: 'https://cryptologos.cc/logos/cardano-ada-logo.png?v=025' },
+    { name: 'THORChain', logo: 'https://cryptologos.cc/logos/thorchain-rune-logo.png?v=025' },
     { name: 'Cosmos', logo: 'https://cryptologos.cc/logos/cosmos-atom-logo.png?v=025' },
     { name: 'Polygon', logo: 'https://cryptologos.cc/logos/polygon-matic-logo.png?v=025' },
     { name: 'Binance Smart Chain', logo: 'https://cryptologos.cc/logos/bnb-bnb-logo.png?v=025' },
     { name: 'Arbitrum', logo: 'https://cryptologos.cc/logos/arbitrum-arb-logo.png?v=025' },
     { name: 'Optimism', logo: 'https://cryptologos.cc/logos/optimism-ethereum-op-logo.png?v=025' },
-    { name: 'Fantom', logo: 'https://cryptologos.cc/logos/fantom-ftm-logo.png?v=025' },
+    { name: 'Ripple', logo: 'https://cryptologos.cc/logos/xrp-xrp-logo.png?v=025' },
   ];
 
   return (

@@ -40,7 +40,7 @@ const Features: React.FC = () => {
             </div>
             <h3 className="text-xl font-medium text-white mb-2">Multi-Factor Authentication</h3>
             <p className="text-indigo-100">
-              Secure your wallet with multiple layers of authentication, including biometrics, hardware keys, and more.
+              Secure your wallet with multiple layers of authentication, including biometrics and more.
             </p>
           </div>
 
@@ -66,7 +66,7 @@ const Features: React.FC = () => {
             </div>
             <h3 className="text-xl font-medium text-white mb-2">Advanced Security</h3>
             <p className="text-indigo-100">
-              Industry-leading security protocols protect your assets with encryption, secure enclaves, and more.
+              Industry-leading security with Threshold Signatures Scheme (TSS) protect your assets with multiple devices signatures - no single point of failure. Never lose funds with one compromised device.
             </p>
           </div>
 
@@ -79,7 +79,7 @@ const Features: React.FC = () => {
             </div>
             <h3 className="text-xl font-medium text-white mb-2">Multi-Device Sync</h3>
             <p className="text-indigo-100">
-              Access your wallet securely from multiple devices with real-time synchronization and backup.
+              Access your wallet securely from multiple devices with real-time synchronization.
             </p>
           </div>
 
@@ -103,10 +103,35 @@ const Features: React.FC = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
             </div>
-            <h3 className="text-xl font-medium text-white mb-2">Transaction Scheduling</h3>
+            <h3 className="text-xl font-medium text-white mb-2">Transaction Policies</h3>
             <p className="text-indigo-100">
-              Schedule transactions in advance and set up recurring payments for regular transfers.
+              Define transaction policies for your crypto wallet - spending limits, address whitelists and more. (COMING SOON)
             </p>
+          </div>
+
+          {/* Feature 7 - Vultisig Plug-Ins */}
+          <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-8 border border-white border-opacity-20 shadow-xl md:col-span-2 lg:col-span-3 flex flex-col md:flex-row items-center">
+            <div className="md:w-2/3 mb-6 md:mb-0 md:pr-8">
+              <div className="h-12 w-12 rounded-md bg-indigo-500 flex items-center justify-center mb-5">
+                <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-medium text-white mb-2">Vultisig Plug-Ins</h3>
+              <p className="text-indigo-100">
+                Unlock new possibilities with AI Agents Plug-Ins. From automated investments (DCA) to salary management, customize your wallet with features tailored to your needs. Simplify your crypto experiences with tools that work seamlessly together. (Still in development)
+              </p>
+            </div>
+            <div className="md:w-1/3 flex justify-center items-center">
+              <div className="relative w-full max-w-[80%]">
+                <img 
+                  src="https://vultisig.com/_next/image?url=%2Fimages%2Fhome%2Fwallets-power.png&w=1920&q=75" 
+                  alt="Vultisig Plug-Ins" 
+                  className="w-auto h-auto object-contain mix-blend-screen"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-transparent pointer-events-none"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
